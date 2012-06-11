@@ -24,7 +24,7 @@ plotMostFrequentAnswer <- function(df, ...) {
     x <- mostFrequentAnswer(df);
     main <- paste("Häufigste Antwort\nn==", n, sep="");
     sub <- paste(attr(df, "filename"), attr(df, "subject"), sep=" : ");
-    p <- barplot(x, col=rainbow(5),
+    p <- barplot(x, col="#7FC97F",
             main=main, names.arg=LETTERS[1:5],
             ylim=c(0, ceiling(max(x*1.05))), sub=sub, ...);
     printPercentage(x, n, p);

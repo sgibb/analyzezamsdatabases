@@ -29,7 +29,7 @@ plotLongestAnswer <- function(df, ...) {
     x <- longestAnswer(df);
     main <- paste("Längste Antwort\nn==", n, sep="");
     sub <- paste(attr(df, "filename"), attr(df, "subject"), sep=" : ");
-    p <- barplot(x, col=rainbow(5), main=main,
+    p <- barplot(x, col="#7FC97F", main=main,
                  names.arg=c("kürzeste Antwort", "2.", "3.", "4.", 
                              "Längste Antwort"),
                 ylim=c(0, ceiling(max(x*1.05))), sub=sub, ...);
